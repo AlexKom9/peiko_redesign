@@ -1,0 +1,33 @@
+.last-projects
+	&__items
+		display: flex
+		flex-wrap: wrap
+	&__item
+		margin-right: 48px
+		display: flex
+		//flex-wrap: wrap
+		&-name
+			+fs-m2
+			font-weight: 600
+			margin-bottom: 8px
+		&-descr
+			+fs-m2
+			font-weight: 200
+	&__icon
+		height: 48px
+		width: 48px
+		margin-right: 12px
+		& > svg
+			width: 100%
+			height: 100%
+	.icon-go_to_project
+		fill: #000
+		stroke: #000
+		color: transparent
+	&--white
+		color: #fff
+		.icon-go_to_project
+			fill: #fff
+			stroke: white
+			color: transparent
+

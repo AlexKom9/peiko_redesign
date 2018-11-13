@@ -1,0 +1,42 @@
+-
+	var tech = [
+		{
+			icon: 'img/angular.svg',
+			name: 'AngularJS'
+		},
+		{
+			icon: 'img/angular.svg',
+			name: 'AngularJS'
+		},
+		{
+			icon: 'img/angular.svg',
+			name: 'AngularJS'
+		},
+		{
+			icon: 'img/angular.svg',
+			name: 'AngularJS'
+		},
+		{
+			icon: 'img/angular.svg',
+			name: 'AngularJS'
+		},
+		{
+			icon: 'img/angular.svg',
+			name: 'AngularJS'
+		},
+		{
+			icon: 'img/angular.svg',
+			name: 'AngularJS'
+		},
+
+	]
+
+.tech
+	.container-l
+		.tech__inner
+			.tech__items
+				each item in tech
+					.tech__item
+						img.tech__item-img(src=item.icon)
+						span=item.name
+

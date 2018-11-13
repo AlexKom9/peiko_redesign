@@ -1,0 +1,75 @@
+.table
+	&__head
+		padding: 40px 24px
+		background-color: $gray7
+		border-radius: $border-radius
+		margin-bottom: 16px
+	&__tabs
+		display: flex
+		flex-wrap: wrap
+	&__tab
+		margin-right: 28px
+		padding: 8px 24px
+		line-height: 24px
+		font-size: +fs-m2
+		color: $black
+		background-color: $gray5
+		border-radius: 100px
+		transition: background-color .2s , color .2s
+		&.active
+			color: $white
+			background-color: $primary
+		&:hover
+			cursor: pointer
+			background-color: $primaryLight
+			color: $white
+	&__body
+		&-row
+			background-color: $gray7
+			border-radius: $border-radius
+			margin-bottom: 16px
+			padding: 20px 24px
+			display: flex
+			justify-content: space-between
+			align-items: center
+			+r(980)
+				flex-wrap: wrap
+
+		&-main
+			display: flex
+			align-items: center
+			+fs-m2
+			font-weight: 600
+		&-info
+			display: flex
+			align-items: center
+			+r(980)
+				width: 100%
+				flex-wrap: wrap
+		&-loc
+			margin-right: 40px
+			display: flex
+			align-items: center
+			+r(980)
+				margin-top: 16px
+			svg
+				margin-right: 8px
+				width: 24px
+				height: 24px
+				fill: $gray3
+		&-button
+			+r(980)
+				margin-top: 16px
+		&-fire
+			svg
+				margin-right: 8px
+				width: 24px
+				height: 24px
+				fill: $warn
+	&__button
+		.button__text
+			white-space: nowrap
+			+fs-s1
+
+
+

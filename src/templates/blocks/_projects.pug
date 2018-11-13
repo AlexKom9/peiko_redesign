@@ -1,0 +1,24 @@
+.projects
+	.container-l
+		.projects__inner
+			- var i = 0;
+			while i < 2
+				- i++
+				.projects__item
+					.project
+						.project__img(style="background-image: url(./img/project_prview_bigrate.jpg)")
+						h4.project__name
+						.project__tags
+							.project__tag
+								+tag('ICO')
+							.project__tag
+								+tag('PHP 2.0')
+							.project__tag
+								+tag('UI/UX Design')
+						.project__link
+							//todo: mixin button outline
+							+button('Смотреть весь проект', 'outline')
+								+svgIcon('right_arrow')
+
+
+

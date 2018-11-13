@@ -1,0 +1,17 @@
+mixin lastProjects(color)
+	- color = color || ''
+	.last-projects(class=(color ? "last-projects--" + color : ''))
+		h4.last-projects__title
+		.last-projects__items
+			.last-projects__item
+				.last-projects__icon
+					+svgIcon('go_to_project')
+				.last-projects__body
+					h5.last-projects__item-name Orion Protocol
+					p.last-projects__item-descr Liquidity Aggregator protocol
+			.last-projects__item
+				.last-projects__icon
+					+svgIcon('go_to_project')
+				.last-projects__body
+					h5.last-projects__item-name Orion Protocol
+					p.last-projects__item-descr Liquidity Aggregator protocol

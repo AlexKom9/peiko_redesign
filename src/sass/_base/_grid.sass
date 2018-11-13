@@ -1,0 +1,36 @@
+$container-l: 1136
+$mobile-gutter: 15px
+$container-s: 980
+
+=container-l
+	max-width: $container-l + 2*$mobile-gutter
+	padding-right: $mobile-gutter
+	padding-left: $mobile-gutter
+	margin-right: auto
+	margin-left: auto
+
+=container-m
+	max-width: $container-s + 2*$mobile-gutter
+	padding-right: $mobile-gutter
+	padding-left: $mobile-gutter
+	margin-right: auto
+	margin-left: auto
+
+.container-l
+	+container-l
+
+.container-m
+	+container-m
+
+$cols: 12
+
+=flex($gutter: 20px)
+	display: flex
+	margin-left: -$gutter/2
+	margin-right: -$gutter/2
+	flex-wrap: wrap
+
+=col($num, $gutter: 20px)
+	width: calc( (((100% - #{$gutter} - (#{$gutter} * (#{$cols} - 1))) / #{$cols}) * #{$num}) + ( #{$gutter} * (#{$num} - 1)) )
+	margin-left: $gutter/2
+	margin-right: $gutter/2

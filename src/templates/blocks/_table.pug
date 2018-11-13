@@ -1,0 +1,28 @@
+section.table-section
+	.container-l
+		.table-section__inner
+			.table
+				.table__head
+					//todo: mobile make select
+					ul.table__tabs
+						li.table__tab.active PHP
+						li.table__tab Project manager
+						li.table__tab Javascript
+						li.table__tab Sales
+						li.table__tab Design
+				.table__body
+					each item in [0,1,2]
+						.table__body-row
+							.table__body-main
+								.table__body-fire
+									+svgIcon('fire')
+								p.table__body-text Senior Php Full Stack Developer
+							.table__body-info
+								.table__body-loc
+									+svgIcon('place')
+									span Kiev
+								.table__body-button
+									+button('Откликнуться на вакансию').button--outline.table__button
+										+svgIcon('right_arrow')
+
+

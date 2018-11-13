@@ -1,0 +1,63 @@
+//FONTS
+=fontpath($name, $name1, $file)
+	src: local($name), local($name1), url("../fonts/" + $file + ".woff2") format("woff2"), url("../fonts/" + $file + ".woff") format("woff"),  url("../fonts/" + $file + ".woff") format("woff")
+
+=fontdefault($style, $weight, $name)
+	font-family: $name
+	font-style: $style
+	font-weight: $weight
+
+//Roboto
+@font-face
+	+fontdefault(normal, 100, 'Roboto')
+	src: local('Roboto Thin'), local('Roboto-Thin'), url('../fonts/Roboto/Roboto-Thin.ttf')
+@font-face
+	+fontdefault(normal, 400, 'Roboto')
+	src: local('Roboto'), local('Roboto-Regular'), url('../fonts/Roboto/Roboto-Regular.ttf')
+@font-face
+	+fontdefault(normal, 600, 'Roboto')
+	src: local('Roboto Medium'), local('Roboto-Medium'), url('../fonts/Roboto/Roboto-Medium.ttf')
+@font-face
+	+fontdefault(normal, 700, 'Roboto')
+	src: local('Roboto Bold'), local('Roboto-Bold'), url('../fonts/Roboto/Roboto-Bold.ttf')
+@font-face
+	+fontdefault(normal, 900, 'Roboto')
+	src: local('Roboto Black'), local('Roboto-Black'), url('../fonts/Roboto/Roboto-Black.ttf')
+
+=main-font
+	font-family: Roboto, sans-serif
+	font-weight: 400
+
+$fs-xl: 36px
+$fs-l: 24px
+$fs-m1: 18px
+$fs-m2: 16px
+$fs-s1: 14px
+$fs-s2: 13px
+$fs-s3: 12px
+
+=fs-xl
+	font-size: $fs-xl
+	line-height: 48px
+	font-weight: 400
+=fs-l
+	font-size: $fs-l
+	line-height: 36px
+	font-weight: 400
+
+=fs-m1
+	font-size: $fs-m1
+	line-height: 30px
+	font-weight: 400
+=fs-m2
+	font-size: $fs-m2
+	line-height: 24px
+	font-weight: 400
+=fs-s1
+	font-size: $fs-s1
+	line-height: 21px
+=fs-s2
+	font-size: $fs-s2
+	line-height: 19px
+	font-weight: 400
+

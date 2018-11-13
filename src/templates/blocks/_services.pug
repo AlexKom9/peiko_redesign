@@ -1,0 +1,49 @@
+-
+	var text = 'We use modern programming languages such as Swift and Objective-C and proven technologies.'
+	var services = [
+		{
+			icon: "apple.svg",
+			title: 'iOS Development',
+			text
+		},
+		{
+			icon: "android.svg",
+			title: 'Android Development',
+			text
+		},
+		{
+			icon: "ui_ux_design.svg",
+			title: 'UI UX Design',
+			text
+		},
+		{
+			icon: "web_development.svg",
+			title: 'Web Development',
+			text
+		},
+		{
+			icon: "project_managment.svg",
+			title: 'Project Managment',
+			text
+		},
+		{
+			icon: "qa.svg",
+			title: 'Quality Testing',
+			text
+		},
+
+	];
+
+.services
+	.container-l
+		.services__inner
+			each item, index in services
+				.services__item
+					.service
+						.service__icon
+							img(src="img/" + item.icon)
+						h4.service__title=item.title
+						p.service__descr=item.text
+						a(href="#").service__link
+							| Learn More
+							+svgIcon('right_arrow')

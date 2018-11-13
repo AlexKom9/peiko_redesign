@@ -1,0 +1,14 @@
+//
+
+mixin button(text, modifier)
+	- modifier = modifier || modifier;
+	a.button(href="#" class=(modifier ? 'button--' + modifier: false))&attributes(attributes)
+		.button__inner
+			if block
+				.button__icon
+					block
+			span.button__text=text
+
+mixin tag(text)
+	a(href="#").tag=text
+

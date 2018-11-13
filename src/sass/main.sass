@@ -1,0 +1,19 @@
+//import base
+@import ./_base/_index
+//import blocks
+@import ./blocks/_index
+
+@import '../svgSprite/symbol/sprite.css'
+
+html
+	+main-font
+//hide svg
+body > svg
+	width: 0
+	height: 0
+
+.l-page
+	overflow-x: hidden
+
+.l-title
+	+title

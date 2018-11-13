@@ -1,0 +1,39 @@
+.button
+	padding: 8px 20px
+	border-radius: 100px
+	border: 1px solid transparent
+	display: inline-block
+	text-decoration: none
+	&:hover
+		cursor: pointer
+	&__inner
+		display: flex
+		align-items: center
+	&__icon
+		margin-right: 8px
+		display: flex
+		align-items: center
+	&__text
+		+fs-m2
+	&--outline
+		border-color: $gray2
+		.button__text
+			color: $gray1
+
+	.icon-right_arrow
+		fill: $gray2
+.tag
+	background-color: $gray5
+	padding: 0 24px
+	border-radius: 50px
+	display: inline-block
+	+fs-m1
+	lin-height: 32px
+	color: $gray1
+	text-decoration: none
+
+
+
+
+
+

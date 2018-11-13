@@ -1,0 +1,19 @@
+include ./_mixins/_svgIcon
+include ./_mixins/_button
+
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		title Bigrate
+		include ./_links
+		block Links
+	body.l-page
+		.l-wrap
+			block body
+
+		include _scripts
+		include ../svgSprite/symbol/sprite.svg
+		block scripts
